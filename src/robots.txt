@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /img/
+Disallow: /css/
+Disallow: /js/
+Disallow: /include/
+Disallow: /404.html
+Disallow: /50x.html
