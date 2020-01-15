@@ -5,7 +5,8 @@
 
 // Duration.
 	$duration: (
-		transition:			0.2s
+		transition:				0.2s,
+		transition2:			0.4s
 	);
 
 // Size.
@@ -30,6 +31,8 @@
 	$palette: (
 		accent1: 			#ffbd24,
 		accent2: 			#d83c17,
+		menu:					#0e0e0e,
+		white:				#ffffff,
 	/*
 		bg:					#935d8c,
 		fg:					rgba(255,255,255,0.65),
