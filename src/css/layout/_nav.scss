@@ -17,14 +17,14 @@
         width: 60px;
         background: _palette(accent1);
         margin: 15px 30px;
+        @include vendor('transform-origin', '55px 5px');
 
         &.active {
           @include vendor('transform', 'rotate(45deg)');
-          @include vendor('transform-origin', '55px 5px');
         }
       }
 
-      &.bar1.active:first-child {
+      &.bar1:first-child {
         @include vendor('transform-origin', '5px 5px');
       }
 
