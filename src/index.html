@@ -46,10 +46,12 @@
 </head>
 <body>
 
-<nav>
-  <span></span>
-  <span></span>
-  <span></span>
+<nav id="nav">
+  <div onclick="function myfunction(){var element = document.getElementsByClassName('bar'); element.classList.add('active');}">
+    <span class="bar bar1 active"></span>
+    <span class="bar bar2 active"></span>
+    <span class="bar bar1 active"></span>
+  </div>
 </nav>
 
 <header>
