@@ -1,0 +1,43 @@
+
+/* Nav */
+
+  #nav {
+    > div > span {
+      &.bar {
+        height: 10px;
+        display: block;
+        border-radius: 5px;
+    		@include vendor('transition', (
+    			'transform #{_duration(transition)} ease',
+    		));
+
+      }
+
+      &.bar1 {
+        width: 60px;
+        background: _palette(accent1);
+        margin: 15px 30px;
+
+        &.active {
+          @include vendor('transform', 'rotate(45deg)');
+          @include vendor('transform-origin', '55px 5px');
+        }
+      }
+
+      &.bar1.active:first-child {
+        @include vendor('transform-origin', '5px 5px');
+      }
+
+      &.bar2 {
+        width: 80px;
+        background: _palette(accent2);
+        margin: 7px 20px;
+        z-index: 99;
+
+        &.active {
+          @include vendor('transform', 'rotate(-45deg)');
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
