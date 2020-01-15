@@ -12,7 +12,47 @@
     background: #f2f2f2;
 
     &.scrolled {
-      background: #ffffff;
+      background: _palette(white);
+    }
+
+    > #menu {
+
+      > ul {
+        @include vendor('transition', (
+          'opacity #{_duration(transition2)} ease',
+        ));
+        //display: none;
+        opacity: 0;
+        position: fixed;
+        color: _palette(white);
+        top: 50%;
+        left: 50%;
+      }
+
+      > span {
+        @include vendor('transition', (
+          'box-shadow #{_duration(transition2)} ease',
+        ));
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0 _palette(menu), 0 0 0 0 _palette(menu);
+        top: 40px;
+        left: 40px;
+      }
+      &.show {
+        > ul {
+          display: block;
+          opacity: 1;
+        }
+
+        > span {
+          box-shadow: 0 0 0 142vw _palette(menu), 0 0 0 142vh _palette(menu);
+        }
+      }
     }
 
     > #wrapper {
@@ -23,40 +63,57 @@
         @include vendor('transition', (
           'height #{_duration(transition)} ease',
           'left #{_duration(transition)} ease',
+          'filter #{_duration(transition)} ease',
         ));
+        @include vendor('filter', 'grayscale(1)');
         position: absolute;
         cursor: pointer;
         height: 80px;
         padding: 10px 23.1px;
         left: calc(50% - 40px);
+
+        &:hover {
+          @include vendor('filter', 'grayscale(0)');
+        }
       }
 
       > #menuToggle {
+        @include vendor('transition', (
+          'filter #{_duration(transition)} ease',
+        ));
         display: inline-block;
         cursor: pointer;
         padding: 23.5px 18.5px;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+
+        &:hover > span.bar {
+          @include vendor('filter', 'grayscale(0)');
+        }
 
         > span {
           &.bar {
+            @include vendor('transition', (
+              'transform #{_duration(transition2)} ease',
+              'transform-origin #{_duration(transition2)} ease',
+              'width #{_duration(transition)} ease',
+              'filter #{_duration(transition)} ease',
+            ));
+            @include vendor('filter', 'grayscale(1)');
             height: 3px;
             display: block;
             border-radius: 1.5px;
-          	@include vendor('transition', (
-          		'transform #{_duration(transition)} ease',
-          		'transform-origin #{_duration(transition)} ease',
-          		'width #{_duration(transition)} ease',
-          	));
-
           }
 
           &.bar1 {
+            @include vendor('transform-origin', '30px 1.5px');
             width: 30px;
             background: _palette(accent1);
             margin: auto;
-            @include vendor('transform-origin', '30px 1.5px');
 
             &.active {
               @include vendor('transform', 'rotate(45deg)');
+              @include vendor('filter', 'grayscale(0)');
             }
           }
 
@@ -71,7 +128,7 @@
 
             &.active {
               @include vendor('transform', 'rotate(-45deg)');
-              transform: rotate(-45deg);
+              @include vendor('filter', 'grayscale(0)');
             }
           }
         }
@@ -89,6 +146,11 @@
     @include breakpoint('<=medium') {
       height: 60px;
 
+      > #menu > span {
+        top: 30px;
+        left: 30px;
+      }
+
       > #wrapper {
 
         > a > #logo > img {
@@ -102,8 +164,8 @@
 
           > span {
             &.bar1 {
-              width: 22px;
               @include vendor('transform-origin', '22px 1.5px');
+              width: 22px;
             }
 
             &.bar2 {
