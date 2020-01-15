@@ -19,13 +19,22 @@
       margin: auto;
       line-height: 11px;
 
-      > #menuToggle {
+      > a > #logo > img {
         @include vendor('transition', (
-          'padding #{_duration(transition)} ease',
+          'height #{_duration(transition)} ease',
+          'left #{_duration(transition)} ease',
         ));
+        position: absolute;
+        cursor: pointer;
+        height: 80px;
+        padding: 10px 23.1px;
+        left: calc(50% - 40px);
+      }
+
+      > #menuToggle {
         display: inline-block;
         cursor: pointer;
-        padding: calc(47px/2);
+        padding: 23.5px 18.5px;
 
         > span {
           &.bar {
@@ -36,7 +45,6 @@
           		'transform #{_duration(transition)} ease',
           		'transform-origin #{_duration(transition)} ease',
           		'width #{_duration(transition)} ease',
-          		'margin #{_duration(transition)} ease',
           	));
 
           }
@@ -81,18 +89,27 @@
     @include breakpoint('<=medium') {
       height: 60px;
 
-      > #wrapper > #menuToggle {
-        padding: calc(35px/2);
+      > #wrapper {
 
-        > span {
-          &.bar1 {
-            width: 22px;
-            @include vendor('transform-origin', '22px 1.5px');
-          }
+        > a > #logo > img {
+          height: 60px;
+          padding: 7.5px 17.3px;
+          left: calc(50% - 30px);
+        }
 
-          &.bar2 {
-            width: 32px;
-            margin: 8px 0;
+        > #menuToggle {
+          padding: 17.5px 14px;
+
+          > span {
+            &.bar1 {
+              width: 22px;
+              @include vendor('transform-origin', '22px 1.5px');
+            }
+
+            &.bar2 {
+              width: 32px;
+              margin: 8px 0;
+            }
           }
         }
       }

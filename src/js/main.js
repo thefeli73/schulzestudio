@@ -1,6 +1,7 @@
-//toggle menu burger animation
-document.getElementById("menuToggle").addEventListener("click", menuToggle);
+//toggle menu burger animation and menu
+document.getElementById("menuToggle").addEventListener("mousedown", menuToggle);
 function menuToggle() {
+  document.getElementById("menu").classList.toggle("show"); //shows menu
   var bars = document.getElementsByClassName('bar');
   for (var i = 0; i < bars.length; i++) {
     bars[i].classList.toggle('active');
