@@ -176,7 +176,7 @@
         }
       }
     }
-
+/*
     @include breakpoint('<=xlarge') {
 
     }
@@ -184,7 +184,7 @@
     @include breakpoint('<=large') {
 
     }
-
+*/
     @include breakpoint('<=medium') {
       height: 60px;
 
@@ -217,7 +217,7 @@
         }
       }
     }
-
+/*
     @include breakpoint('<=small') {
 
     }
@@ -229,4 +229,5 @@
     @include breakpoint('<=xxsmall') {
 
     }
+*/
   }
