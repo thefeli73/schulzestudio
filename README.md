@@ -2,4 +2,5 @@
 my website portfolio
 
 ## Link
-https://schulze.studio
+Release: https://schulze.studio
+Development: https://dev.schulze.studio
