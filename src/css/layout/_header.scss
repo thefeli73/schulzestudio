@@ -5,7 +5,10 @@
     top: 80px;
     position: absolute;
 
-
+    > #logo > img {
+      height: 140pt;
+      width: auto;
+    }
     /*
         @include breakpoint('<=xlarge') {
 
