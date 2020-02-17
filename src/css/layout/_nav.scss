@@ -35,7 +35,7 @@
           margin: 0 40%;
           &:before {
             @include vendor('transition', (
-              'width #{_duration(transition)} ease',
+              'width #{_duration(transition2)} ease',
             ));
             content: '';
             position: absolute;
@@ -47,6 +47,9 @@
             width: 0;
           }
           &:after {
+            @include vendor('transition', (
+              'opacity #{_duration(transition2)} ease',
+            ));
             opacity: 0;
             content: attr(data-text);
             position: absolute;
