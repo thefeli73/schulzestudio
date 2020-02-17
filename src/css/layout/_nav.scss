@@ -87,10 +87,23 @@
         top: 40px;
         left: 40px;
       }
+
+      > #blocker {
+        top: 80px;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        display: none;
+      }
+
       &.show {
         > ul {
           display: block;
           opacity: 1;
+        }
+
+        > #blocker {
+          display: block;
         }
 
         > span {
@@ -191,9 +204,15 @@
     @include breakpoint('<=medium') {
       height: 60px;
 
-      > #menu > span {
-        top: 30px;
-        left: 30px;
+      > #menu {
+        > span {
+          top: 30px;
+          left: 30px;
+        }
+
+        > #blocker {
+          top: 60px;
+        }
       }
 
       > #wrapper {
