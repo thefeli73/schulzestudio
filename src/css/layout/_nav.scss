@@ -30,7 +30,7 @@
         top: 50%;
         transform: translate(0, -50%);
 
-        li {
+        > li {
           transform: translate3d(0,0,0);
           margin: 1em 40%;
 
@@ -39,6 +39,14 @@
             margin: 1em 0;
             display: block;
             border-bottom: none;
+            position: relative;
+              @include vendor('transition', (
+                'color #{_duration(transition2)} ease',
+              ));
+
+            &:hover {
+              color: _palette(menu);
+            }
           }
 
           &:before {
@@ -55,30 +63,11 @@
             width: 0;
             pointer-events: none;
           }
-          &:after {
-            @include vendor('transition', (
-              'opacity #{_duration(transition2)} ease',
-            ));
-            opacity: 0;
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            color: _palette(menu);
-            pointer-events: none;
-            line-height: 3em;
-          }
           &:hover {
             &:before {
               left: 0;
               right: auto;
               width: 100%;
-            }
-            &:after {
-              opacity: 1;
             }
           }
         }
