@@ -1,8 +1,7 @@
 {
-	"name": "Schulze Studio",
+	"name": "Schulze_Studio",
 	"version": "1.0.0",
 	"description": "I'm Felix, welcome to my portfolio",
-	"main": "./dist/your-main-js-file.js",
 	"author": {
 		"name": "Felix Schulze",
 		"url": "https://schulze.studio"
@@ -27,6 +26,7 @@
 		"browser-sync": "^2.26.7",
 		"cssnano": "^4.1.10",
 		"del": "^3.0.0",
+		"gulp": "^4.0.2",
 		"gulp-buster": "^1.1.0",
 		"gulp-cache-buster": "^0.2.1",
 		"gulp-concat": "^2.6.1",
@@ -48,7 +48,6 @@
 		"purify-css": "^1.2.5"
 	},
 	"dependencies": {
-		"gulp": "^4.0.2",
 		"gulp-hash-src": "^0.1.6"
 	}
 }
