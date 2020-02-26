@@ -6,7 +6,7 @@
     > #logo-container {
       width: max-content;
       margin: auto;
-      padding: 2em 1em;
+      padding: 3em 1em;
 
       > h1 {
         font-size: 60pt;
@@ -35,19 +35,32 @@
         @include breakpoint('<=large') {
 
         }
-    */
+
         @include breakpoint('<=medium') {
           margin-top: 60px;
+
+          > #logo-container {
+            padding: 2em 0.5em;
+          }
         }
-    /*
+
         @include breakpoint('<=small') {
 
         }
-
+    */
         @include breakpoint('<=xsmall') {
+          > #logo-container {
 
+            > h1 {
+              font-size: 40pt;
+            }
+
+            > #logo > img {
+              height: 93pt;
+            }
+          }
         }
-
+    /*
         @include breakpoint('<=xxsmall') {
 
         }
