@@ -2,7 +2,14 @@
 /* Main */
 
   #main {
-    
+    width: 100%;
+
+    > section {
+      height: 400px;
+      width: 100%;
+      max-width: 600px;
+      margin: 8em auto 4em;
+    }
     /*
         @include breakpoint('<=xlarge') {
 

@@ -6,6 +6,7 @@
       'height #{_duration(transition)} ease',
       'background #{_duration(transition)} ease',
     ));
+    top: 0;
     height: 80px;
     position: fixed;
     width: 100%;

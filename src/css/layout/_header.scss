@@ -2,28 +2,30 @@
 /* Header */
 
   #header {
-    top: 80px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 70px);
+    margin-top: 80px;
+    > #logo-container {
+      width: max-content;
+      margin: auto;
+      padding: 2em 1em;
 
-    > h1 {
-      font-size: 60pt;
-      display: inline-block;
-      color: _palette(accent1);
-      margin: 0 0 0 40px;
+      > h1 {
+        font-size: 60pt;
+        display: inline-block;
+        color: _palette(accent1);
+        margin: 0 0 0 40px;
 
-      &:first-child {
-        color: _palette(accent2);
-        margin: 0 0 0 10px;
+        &:first-child {
+          color: _palette(accent2);
+          margin: 0 0 0 10px;
+        }
       }
-    }
 
-    > #logo > img {
-      height: 140pt;
-      width: auto;
-      display: inline-block;
-      float: left;
+      > #logo > img {
+        height: 140pt;
+        width: auto;
+        display: inline-block;
+        float: left;
+      }
     }
     /*
         @include breakpoint('<=xlarge') {
@@ -35,7 +37,7 @@
         }
     */
         @include breakpoint('<=medium') {
-          top: 60px;
+          margin-top: 60px;
         }
     /*
         @include breakpoint('<=small') {
