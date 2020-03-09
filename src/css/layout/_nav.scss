@@ -118,7 +118,7 @@
       margin: auto;
       line-height: 11px;
 
-      > a > #logo > img {
+      > a > #icon > img {
         @include vendor('transition', (
           'height #{_duration(transition)} ease',
           'left #{_duration(transition)} ease',
@@ -194,7 +194,7 @@
         }
       }
     }
-/*
+
     @include breakpoint('<=xlarge') {
 
     }
@@ -202,7 +202,7 @@
     @include breakpoint('<=large') {
 
     }
-*/
+
     @include breakpoint('<=medium') {
       height: 60px;
 
@@ -219,7 +219,7 @@
 
       > #wrapper {
 
-        > a > #logo > img {
+        > a > #icon > img {
           height: 60px;
           padding: 7.5px 17.3px;
         }
@@ -241,7 +241,7 @@
         }
       }
     }
-/*
+
     @include breakpoint('<=small') {
 
     }
@@ -253,5 +253,5 @@
     @include breakpoint('<=xxsmall') {
 
     }
-*/
+
   }

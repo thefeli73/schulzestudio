@@ -6,10 +6,10 @@
     > #logo-container {
       width: max-content;
       margin: auto;
-      padding: 3em 1em;
+      padding: 20vh 1em;
 
       > h1 {
-        font-size: 60pt;
+        font-size: 77pt;
         display: inline-block;
         color: _palette(accent1);
         margin: 0 0 0 40px;
@@ -21,18 +21,28 @@
       }
 
       > #logo > img {
-        height: 140pt;
+        height: 180pt;
         width: auto;
         display: inline-block;
         float: left;
       }
     }
-    /*
+
         @include breakpoint('<=xlarge') {
 
         }
 
         @include breakpoint('<=large') {
+          > #logo-container {
+
+            > h1 {
+              font-size: 60pt;
+            }
+
+            > #logo > img {
+              height: 140pt;
+            }
+          }
 
         }
 
@@ -40,14 +50,14 @@
           margin-top: 60px;
 
           > #logo-container {
-            padding: 2em 0.5em;
+            padding: 20vh 0.5em;
           }
         }
 
         @include breakpoint('<=small') {
 
         }
-    */
+
         @include breakpoint('<=xsmall') {
           > #logo-container {
 
@@ -60,9 +70,9 @@
             }
           }
         }
-    /*
+
         @include breakpoint('<=xxsmall') {
 
         }
-    */
+
   }
