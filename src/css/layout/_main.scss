@@ -6,17 +6,42 @@
     margin: 8em 0;
 
     > section {
-      width: 100%;
-      max-width: 800px;
+      width: 61.805%;
       margin: 8em auto;
       background-color: #fff;
 
-      > div {
-        width: 100%;
-        padding-bottom: 50%;
+      &:hover {
+        cursor: pointer;
+      }
+
+      > a {
+        all: initial;
+        all: unset;
+
+        > div {
+          width: 100%;
+          height: 0;
+          padding-bottom: 61.805%;
+          overflow: hidden;
+
+          > picture > img {
+            width: 100%;
+            @include vendor('transition', (
+              'filter #{_duration(transition2)} ease',
+              'transform #{_duration(slow-transition)} ease'
+            ));
+            @include vendor('filter', 'brightness(1.15) contrast(0.8) grayscale(1)');
+            @include vendor('transform', 'scale(1)');
+
+            &:hover {
+              @include vendor('filter', 'brightness(1.0) contrast(1.0) grayscale(0.2)');
+              @include vendor('transform', 'scale(1.2)');
+            }
+          }
+        }
       }
     }
-    /*
+
         @include breakpoint('<=xlarge') {
 
         }
@@ -32,15 +57,15 @@
         @include breakpoint('<=small') {
 
         }
-*/
+
         @include breakpoint('<=xsmall') {
           > section {
             margin: 2em auto;
           }
         }
-/*
+
         @include breakpoint('<=xxsmall') {
 
         }
-    */
+
   }
