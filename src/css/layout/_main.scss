@@ -24,10 +24,16 @@
           padding-bottom: 61.805%;
           overflow: hidden;
 
+          > .siteTitle {
+            > h2 {
+              position: absolute;
+              z-index: 99;
+            }
+          }
           > picture > img {
             width: 100%;
             @include vendor('transition', (
-              'filter #{_duration(transition2)} ease',
+              'filter #{_duration(slow-transition)} ease',
               'transform #{_duration(slow-transition)} ease'
             ));
             @include vendor('filter', 'brightness(1.15) contrast(0.8) grayscale(1)');
