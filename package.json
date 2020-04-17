@@ -22,7 +22,7 @@
 		"> 0.25%"
 	],
 	"devDependencies": {
-		"autoprefixer": "^9.6.1",
+		"autoprefixer": "^9.7.6",
 		"browser-sync": "^2.26.7",
 		"cssnano": "^4.1.10",
 		"del": "^3.0.0",
@@ -32,19 +32,19 @@
 		"gulp-concat": "^2.6.1",
 		"gulp-flatmap": "^1.0.2",
 		"gulp-hasher": "^0.1.0",
-		"gulp-header": "^2.0.5",
+		"gulp-header": "^2.0.9",
 		"gulp-htmlmin": "^5.0.1",
 		"gulp-jshint": "^2.1.0",
 		"gulp-optimize-js": "^1.1.0",
 		"gulp-postcss": "^8.0.0",
 		"gulp-rename": "^1.4.0",
 		"gulp-sass": "^4.0.2",
-		"gulp-svgmin": "^2.1.0",
-		"gulp-terser": "^1.1.7",
+		"gulp-svgmin": "^2.2.0",
+		"gulp-terser": "^1.2.0",
 		"gulp-usemin": "^0.3.30",
-		"jshint": "^2.9.6",
+		"jshint": "^2.11.0",
 		"jshint-stylish": "^2.2.1",
-		"lazypipe": "^1.0.1",
+		"lazypipe": "^1.0.2",
 		"purify-css": "^1.2.5"
 	},
 	"dependencies": {
