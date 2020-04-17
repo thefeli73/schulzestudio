@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /include/
-Disallow: /404.html
-Disallow: /50x.html
