@@ -55,7 +55,7 @@
               'filter #{_duration(slow-transition)} ease',
               'transform #{_duration(slow-transition)} ease'
             ));
-            @include vendor('filter', 'brightness(1.15) contrast(0.8) grayscale(1)');
+            @include vendor('filter', 'brightness(1.35) contrast(0.55) grayscale(1)');
             @include vendor('transform', 'scale(1.2)');
 
             &:hover {
