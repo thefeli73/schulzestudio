@@ -13,7 +13,6 @@ function menuToggle() {
       $("#menu").css('display','none'); //disables menu
     },400);
   }
-
   var bars = $('.bar');
   for (var i = 0; i < bars.length; i++) {
     bars[i].classList.toggle('active');
@@ -28,3 +27,28 @@ window.addEventListener('scroll', function() {
     document.getElementById("nav").classList.add('scrolled');
   }
 });
+
+//parallax text description
+/*
+var rellax = new Rellax('.rellax', {
+  center: false
+});
+var rellax = new Rellax('.rellax1', {
+  center: false
+});
+var rellax = new Rellax('.rellax2', {
+  center: false
+});
+var rellax = new Rellax('.rellax3', {
+  center: false
+});
+var rellax = new Rellax('.rellax4', {
+  center: false
+});
+var rellax = new Rellax('.rellax5', {
+  center: false
+});
+var rellax = new Rellax('.rellax6', {
+  center: false
+});
+*/
