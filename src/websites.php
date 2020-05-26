@@ -1,41 +1,20 @@
 <!doctype html>
-<html lang="sv-SE">
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<title>Page not found</title>
+  <?php
+  include 'include/headmeta.php';
+  ?>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta http-equiv="content-language" content="sv-SE">
-<meta name="author" content="Felix Schulze">
-<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="public">
-<link rel="canonical" href="https://schulze.studio/404.html">
-
-<meta name="title" content="404 Not found">
-
-<link rel="stylesheet" async href="/css/main.css">
-
-
-
-
-
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-	<!--
-  XXXXXXX
-  FAVICON
-  XXXXXXX
-  -->
- <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-<link rel="manifest" href="/img/favicon/site.webmanifest">
-<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/img/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-
+  <title>Websites</title>
+  <meta name="description" content="I'm Felix Schulze. Welcome to my portfolio.">
+  <meta name="keywords" content="Felix, Schulze, portfolio, webdesign, ux, ui, web, design">
+  <link rel="canonical" href="https://schulze.studio/websites">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Schulze.Studio">
+  <meta property="og:title" content="Websites">
+  <meta property="og:url" content="https://schulze.studio/websites">
+  <meta property="og:description" content="I'm Felix Schulze. Welcome to my portfolio.">
+  <meta name="title" content="Websites">
 </head>
 <body>
 
