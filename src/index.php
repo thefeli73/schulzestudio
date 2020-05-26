@@ -71,9 +71,9 @@
       <div class="siteTitle">
         <h2>Solaflex&nbsp;AB</h2>
         <picture id="tanning">
-          <source srcset="/img/site/solaflex/tan@1.00x.webp" type="image/webp">
-          <source srcset="/img/site/solaflex/tan@1.00x.png" type="image/png">
-          <img src="/img/site/solaflex/tan@1.00x.png" alt="Solaflex">
+          <source srcset="/img/site/solaflex/tan@0.50x.webp" type="image/webp">
+          <source srcset="/img/site/solaflex/tan@0.50x.png" type="image/png">
+          <img src="/img/site/solaflex/tan@0.50x.png" alt="Solaflex">
         </picture>
       </div>
     </a>
@@ -84,9 +84,9 @@
       <div class="siteTitle">
         <h2>Meritkollen</h2>
         <picture id="graduation">
-          <source srcset="/img/site/meritkollen/graduation@1.00x.webp" type="image/webp">
-          <source srcset="/img/site/meritkollen/graduation@1.00x.png" type="image/png">
-          <img src="/img/site/meritkollen/graduation@1.00x.png" alt="Meritkollen">
+          <source srcset="/img/site/meritkollen/graduation@0.50x.webp" type="image/webp">
+          <source srcset="/img/site/meritkollen/graduation@0.50x.png" type="image/png">
+          <img src="/img/site/meritkollen/graduation@0.50x.png" alt="Meritkollen">
         </picture>
       </div>
     </a>
@@ -97,9 +97,9 @@
       <div class="siteTitle">
         <h2>Schulze&nbsp;übersetzungen</h2>
         <picture id="letters">
-          <source srcset="/img/site/schulze-uebersetzungen/letters@1.00x.webp" type="image/webp">
-          <source srcset="/img/site/schulze-uebersetzungen/letters@1.00x.png" type="image/png">
-          <img src="/img/site/schulze-uebersetzungen/letters@1.00x.png" alt="schulze-uebersetzungen">
+          <source srcset="/img/site/schulze-uebersetzungen/letters@0.50x.webp" type="image/webp">
+          <source srcset="/img/site/schulze-uebersetzungen/letters@0.50x.png" type="image/png">
+          <img src="/img/site/schulze-uebersetzungen/letters@0.50x.png" alt="schulze-uebersetzungen">
         </picture>
       </div>
     </a>
