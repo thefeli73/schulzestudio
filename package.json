@@ -42,7 +42,7 @@
 		"gulp-svgmin": "^2.2.0",
 		"gulp-terser": "^1.2.0",
 		"gulp-usemin": "^0.3.30",
-		"jshint": "^2.11.0",
+		"jshint": "^2.13.6",
 		"jshint-stylish": "^2.2.1",
 		"lazypipe": "^1.0.2",
 		"purify-css": "^1.2.5"
